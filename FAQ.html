@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatian Top Team</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .pravokutnik {
+      margin: 20px;
+    }
+
+    .pitanje {
+      background-color: red;
+      color: white;
+      padding: 40px;
+      margin: 5px 0;
+      cursor: pointer;
+      width: 60%;
+      font-size: 2.5em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .odgovor {
+      display: none;
+      background-color: white;
+      color: red;
+      padding: 40px;
+      margin: 5px 0;
+      width: 60%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 2.5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Naslovnica</a>
+    <div class="dropdown">
+      <a>O nama</a>
+      <div class="dropdown-content">
+        <a href="FAQ.html">FAQ</a>
+        <a href="Virtualtour.html">Virtualni tour</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a>Programi</a>
+      <div class="dropdown-content">
+        <a href="MMA.html">MMA</a>
+        <a href="Kickboxing.html">Kickboxing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a>Naš tim</a>
+      <div class="dropdown-content">
+        <a href="Treneri.html">Treneri</a>
+        <a href="Borci.html">Borci</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a>Media</a>
+      <div class="dropdown-content">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+      </div>
+    </div>
+    <a href="Novosti.html">Novosti</a>
+    <a href="clan.html">Postani član</a>
+  </div>
+
+  <h1>Često postavljena pitanja</h1>
+
+  <div class="pravokutnik">
+    <div class="pitanje" onclick="Tipka('odg1')">Ja sam profesionalni/amaterski borac koji se želi pridružiti timu</div>
+    <div class="odgovor" id="odg1">Ako ste amaterski borac ili nadolazeći profesionalac ispunite <a
+        href="clan.html">formular</a> ili pošaljite informacije na info@croatiantopteam.com </div>
+
+    <div class="pitanje" onclick="Tipka('odg2')">Je li vaša teretana samo za profesionalne borce?</div>
+    <div class="odgovor" id="odg2">Da, fokusirani smo na obuku naših profesionalnih boraca i razvoj naših budućih
+      profesionalaca, kao i naših amaterskih boraca.</div>
+
+    <div class="pitanje" onclick="Tipka('odg3')">Dolazim u posjet izvan grada. Mogu li trenirati u vašoj teretani?</div>
+    <div class="odgovor" id="odg3">Trenutačno nismo otvoreni za javnost niti nudimo tečajeve obuke.</div>
+
+    <div class="pitanje" onclick="Tipka('odg4')">Zanimaju me privatni treninzi.</div>
+    <div class="odgovor" id="odg4">Privatni treninzi mogući su za isključivo za aktualne sportaše u našoj teretani po
+      dogovorenoj cijeni sa određenim trenerom.</div>
+    <div class="pitanje" onclick="Tipka('odg5')">Jesu li seminari boraca/trenera dostupni za širu javnost?</div>
+    <div class="odgovor" id="odg5">Da, seminari vanjskih boraca i trenera dostupni su za javnost u određenom broju.
+    </div>
+  </div>
+
+  <script>
+    function Tipka(id) {
+      var answer = document.getElementById(id);
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+  </script>
+  <footer>
+    <img src="logo.svg" alt="Croatian Top Team" style="width:10%; height:auto;">
+  </footer>
+</body>
+
+</html>
