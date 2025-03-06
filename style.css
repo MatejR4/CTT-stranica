@@ -25,8 +25,9 @@ body {
     color: black;
 }
 
-.navbar a.active {
-    background-color: #FFFFFF;
+.navbar a.active{
+    background-color: #D3D3D3;
+    color: black;
 }
 
 .dropdown {
@@ -101,7 +102,7 @@ footer {
 
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 6vw;
     font-family: Rockwell;
     color: #222222;
     text-shadow: 2vw 2vw 4vw rgba(0, 0, 0, 0.7);
@@ -109,15 +110,18 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 150%;
+    font-family: Rockwell;
+    color: #AAA;
+    text-shadow: 2vw 2vw 4vw rgba(0, 0, 0, 0.7);
 }
 
 .clanak {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 5%;
     align-items: center;
     flex-direction: row;
-    max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -126,10 +130,11 @@ h2 {
     max-width: 50vw;
     padding: 2vw;
     background-color: rgba(0, 0, 0, 0.8);
-    font-size: 2vw;
+    font-size: 1.6vw;
     line-height: 1.6;
     color: white;
     text-align: left;
+    padding: 3%;
 }
 
 .slike {
@@ -147,6 +152,12 @@ h2 {
 }
 
 .slika {
+    margin-left: 2vw;
+    max-width: 30vw;
+    height: auto;
+}
+
+video{
     margin-left: 2vw;
     max-width: 30vw;
     height: auto;
